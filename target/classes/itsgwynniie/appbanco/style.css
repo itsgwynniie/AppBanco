@@ -1,0 +1,42 @@
+/* 
+    Created on : Nov 23, 2024, 5:46:02 PM
+    Author     : gwyneth
+*/
+
+.root {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333;    /* gris negro */
+}
+
+.label {
+    -fx-font-weight: 400;
+}
+
+.button-fucsia {
+    -fx-background-color: #bc147a;  /* fucsia */
+    -fx-background-radius: 5px;
+    -fx-text-fill: #fafafc;    /* blanco */
+}
+
+.button-blue-text {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #3191e1;
+}
+
+.button-gray-fucsia {
+    -fx-background-color: rgba(203, 203, 216, 0.35);
+    -fx-background-radius: 5px;
+    -fx-text-fill: #333333;
+    -fx-border-color: gray;
+    -fx-border-radius: 5px;
+}
+
+.textfield {
+    -fx-background-color: #ffffff;
+    -fx-border-color: gray;
+    -fx-border-radius: 5px;
+}
+
+.textfield:target {
+    -fx-background-color: #ceccdf;  /* gris claro azulado */
+}

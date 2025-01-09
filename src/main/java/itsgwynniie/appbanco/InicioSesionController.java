@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 public class InicioSesionController {
     @FXML TextField txtuser;
-    @FXML TextField txtclave;
+    @FXML PasswordField txtclave;
     
     UsuarioController usu = new UsuarioController();
 
@@ -95,10 +95,12 @@ public class InicioSesionController {
         new Thread(task).start();
     }
     
+    @FXML
     private void recuperarUser() {
         
     }
     
+    @FXML
     private void olvideContrasenha() {
         
     }
