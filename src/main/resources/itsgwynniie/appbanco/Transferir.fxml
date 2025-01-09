@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itsgwynniie.appbanco.TransferirController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="335.0" styleClass="root" stylesheets="@../../../../../../AppBancoGuayaquil/src/main/resources/appbancoguayaquil/style.css">
+               <items>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToInicioSesion" styleClass="button-fucsia" text="&lt;" textAlignment="CENTER" />
+               </items>
+            </ToolBar>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutY="51.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="335.0" styleClass="root">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Transferir" textAlignment="CENTER" wrappingWidth="315.0" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Cuenta origen" wrappingWidth="315.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Text>
+            <ComboBox fx:id="cbocuenta" prefHeight="26.0" prefWidth="348.0" styleClass="textfield">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Cuenta destino" wrappingWidth="315.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="txtcuenta" styleClass="textfield">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Monto" wrappingWidth="315.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="txtmonto" styleClass="textfield">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="btntransferir" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#transferir" prefHeight="33.0" prefWidth="315.0" styleClass="button-fucsia" text="Transferir" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>
