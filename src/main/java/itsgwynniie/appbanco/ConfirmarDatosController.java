@@ -21,6 +21,15 @@ public class ConfirmarDatosController {
     private UsuarioController usu = new UsuarioController();
     
     @FXML
+    private void initialize() {
+        txtclave.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue.length() > 15) {
+                txtclave.setText(oldValue);
+            }
+        });
+    }
+    
+    @FXML
     private void switchToInicioSesion() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("InicioSesion.fxml"));
         Scene scene = new Scene(loader.load());

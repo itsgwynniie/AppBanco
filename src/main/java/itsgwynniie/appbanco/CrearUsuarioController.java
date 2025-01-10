@@ -33,6 +33,15 @@ public class CrearUsuarioController {
     private CheckBox check;
     
     private UsuarioController usu = new UsuarioController();
+    
+    @FXML
+    private void initialize() {
+        txtclave.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue.length() > 15) {
+                txtclave.setText(oldValue);
+            }
+        });
+    }
 
     @FXML
     private void switchToInicioSesion() throws IOException {

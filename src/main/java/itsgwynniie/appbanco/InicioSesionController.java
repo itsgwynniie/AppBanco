@@ -15,6 +15,15 @@ public class InicioSesionController {
     @FXML PasswordField txtclave;
     
     UsuarioController usu = new UsuarioController();
+    
+    @FXML
+    private void initialize() {
+        txtclave.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue.length() > 15) {
+                txtclave.setText(oldValue);
+            }
+        });
+    }
 
     @FXML
     private void switchToCrearUsuario() throws IOException {
